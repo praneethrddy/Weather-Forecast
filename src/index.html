@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherApp</title>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+    <script src="/js/app.js" defer></script>
+
+</head>
+
+<body>
+    <div class="main-content">
+        <header>
+            <h1>Weather-Forecasting</h1>
+            <nav>
+                <a href="/">Weather</a>
+                <a href="/air">Air Pollution</a>
+            </nav>
+        </header>
+        <form id="formid" action="">
+            <input type = "text" name = "search" placeholder="Location..">
+            <button type="submit" id = "submit"><i class="fa fa-search"></i></button>
+        </form>
+        <span>
+            <button id = "getlocation" style="font-size:24px"><i class="material-icons">my_location</i>Current Location</button>
+            <div class="message-1">
+                <p id="message-1"></p>
+            </div>
+            <div class="con">
+                <div class="message-2">
+                    <p id="message-2"></p>
+                </div>
+                <div class="message-3">
+                    <p id="message-3"></p>
+                </div>
+                <div class="message-4">
+                    <p id="message-4"></p>
+                </div>
+                <div class="message-5">
+                    <p id="message-5"></p>
+                </div>
+                <div class="message-6">
+                    <p id="message-6"></p>
+                </div>
+                <div class="message-7">
+                    <p id="message-7"></p>
+                </div>
+                <div class="message-8">
+                    <p id="message-8"></p>
+            </div>
+        </div>
+        </span>
+    </div>
+    </div>
+        <div class="map-container">
+            <div id="mapid"></div>
+         </div>
+    
+</body>
+
+</html>
